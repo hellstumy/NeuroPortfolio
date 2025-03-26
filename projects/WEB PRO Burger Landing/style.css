@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*! Основное */
+
+body{
+   background-color: #1c1c1c;
+   font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin: 25px 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin: 0;
+}
+p + p{
+    margin-top: 10px;
+}
+.container{
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15;
+    }
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-weight: 500;
+    width: 165;
+    height: 50;
+    font-size: 16px;
+    background: #F6762C;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+ }
+ 
+ .btn:hover
+ {
+     opacity: 0.8;
+ }
+
+ h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+ }
+/*! Шапка */
+
+header {
+    
+    
+    padding: 25px 0;
+    z-index: 10;
+    position: relative;
+    
+}
+header .container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.logo.img {
+
+}
+.active{
+
+}
+.headernav {
+
+}
+
+.headerlist {
+    display: flex;
+    gap: 30px;
+}
+.headernav a{
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.headernav a:hover{
+    opacity: 0.9;
+}
+.headernav a.active{
+    opacity: 1;
+}
+
+/*! база */
+
+.main{
+
+}
+/* wellcome */
+.wellcome {
+box-sizing: border-box;
+min-height: 100vh;
+margin-top: -100px;
+padding: 200px 0;
+background-image: url(./images/welcome-bg.jpg) ;
+background-repeat: no-repeat;
+background-size: cover ;
+background-position: center;
+}
+.wellcome_text{
+    max-width: 550px;
+}
+.wellcome__st {
+margin-bottom: 7px;
+font-size: 14px;
+letter-spacing: 0.1em;
+}
+.wellcome__tittle {
+font-size: 58px;
+margin: 0;
+}
+.wellcome__p {
+font-size: 18px;
+opacity: 0.7;
+margin: 40px 0;
+}
+
+/* FOODLIST */
+.foodlist {
+    padding: 100px 0;
+}
+.foodlist .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.foodlist_cards {
+    width: 260px;
+    overflow: hidden;
+    background: #312f30;
+    border-radius: 10px;
+}
+.foodlist_img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    
+}
+.foodlist_wraper{
+    padding: 30px 20px;
+}
+.foodlist_title {
+    font-size: 20px;
+    margin: 15px 0;
+    }
+.foodlist_p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* ORDER */
+.order {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+.order .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+}
+.order_img {
+    max-width: 450px;
+}
+.order_text {
+    max-width: 370px;
+}
+.order_title {
+    margin-bottom: 25px;
+    font-size: 44px;
+}
+.order_p {
+    font-style: 20px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+.order_price {
+    font-style: 20px;
+    color: #F6762C;
+    font-weight: 500;
+    list-style: 0,1em;
+}
+.order_price--old {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-decoration-line: line-through;
+    color: #F6762C;
+    opacity: 0.5;
+
+}
+.order_price + .order_price--old{
+    margin-left: 3px;
+}
+.order .btn{
+    margin-top: 10px;
+}
+
+/* product */
+.product {
+    padding: 150px 0;
+}
+.product .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.prodcut_card {
+    box-sizing: border-box;
+    width: 555px;
+    min-height: 300px;
+    padding: 60px 25px 0 290px;
+    block-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.prodcut_card:nth-child(even){
+ padding-left: 25px;
+ padding-right: 290px;
+}
+.product_title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.product_p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.product_price {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+.product_price--old {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    color: #F6762C;
+    opacity: 0.5;
+}
+.product_price + .product_price--old{
+    margin-left: 5px;
+}
+.btn-small {
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+
+}
+.card-queen{
+    background-image: url(./images/product-1.jpg);
+}
+
+.card-pizza{
+background-image: url(./images/product-2.jpg);
+}
+.card-burger{
+    background-image: url(./images/product-3.jpg);
+}
+.card-papa{
+    background-image: url(./images/product-4.jpg);
+}
+
+/* FEEDBACK */
+
+.feedback {
+    padding-bottom: 200px;
+}
+.feedback .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
+    
+}
+.feedback_img {
+}
+.feedback_text {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+
+    
+   
+}
+.feedback_text::before{
+    content: url(./images/icons/quote.svg);
+}
+.feedback_p {
+    margin: 30px 0;
+    opacity: 0.7;
+}
+.feedback_autor {
+
+    font-size: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+.feedback_subautor {
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+
+}
+
+/* download */
+.download {
+    padding: 60px 0;
+    background: #312F30;
+}
+.download .container {
+    display: flex;
+    justify-content: space-around;
+}
+.download_p {
+    font-weight: 500;
+    font-size: 40px;
+
+}
+.btn {
+}
+
+/* footer */
+.footer {
+    padding: 120px 0;
+}
+.footer a{
+
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer_logo {
+    
+    margin-bottom: 20px;
+}
+.footer_link + .footer_link {
+    margin-top: 10px;
+}
+.footer_link-mail {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.footer_link-mail::before{
+    content: url(./images/icons/mail.svg);
+}
+.footer_link-web {
+    font-size: 12px;
+    
+    opacity: 0.8;
+}
+.footer_link-web::before{
+    content: url(./images/icons/global.svg);
+}
+.footede_nav {
+}
+.footer_navlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 158px;
+    
+}
+.footer_navtitle {
+    font-weight: 500;
+
+}
+.footer_inneer-item {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.footer_list-item {
+}
+.footer_socials {
+}
+.footer_title {
+}
+.footer_social-icons {
+}
+.fooler_social-link {
+}

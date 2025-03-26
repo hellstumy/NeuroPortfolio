@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEEDY DEV OVERDOSE</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="/assets/generated-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Status Bars -->
+    <div class="status-bars">
+      <div class="status-bar-container">
+        <span class="status-label status-pink">CAFFEINE:</span>
+        <div class="status-bar">
+          <div class="status-fill status-pink-fill" id="caffeine-bar"></div>
+        </div>
+        <span class="status-value status-pink" id="caffeine-value">78%</span>
+      </div>
+      <div class="status-bar-container">
+        <span class="status-label status-turquoise">MENTAL:</span>
+        <div class="status-bar">
+          <div class="status-fill status-turquoise-fill" id="mental-bar"></div>
+        </div>
+        <span class="status-value status-turquoise" id="mental-value">45%</span>
+      </div>
+      <div class="status-bar-container">
+        <span class="status-label status-purple">CODE:</span>
+        <div class="status-bar">
+          <div class="status-fill status-purple-fill" id="code-bar"></div>
+        </div>
+        <span class="status-value status-purple" id="code-value">92%</span>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+      <div class="window window-blue">
+        <div class="window-header">
+          <h2 class="window-title">MENU.exe</h2>
+          <div class="window-controls">
+            <div class="window-button window-button-turquoise"></div>
+            <div class="window-button window-button-pink"></div>
+          </div>
+        </div>
+        <div class="window-content">
+          <nav>
+            <div class="nav-item nav-pink" data-page="home">
+              <span class="nav-pointer">▶</span> HOME
+            </div>
+            <div class="nav-item nav-turquoise" data-page="about">
+              <span class="nav-pointer">▶</span> ABOUT
+            </div>
+            <div class="nav-item nav-purple" data-page="projects">
+              <span class="nav-pointer">▶</span> PROJECTS
+            </div>
+            <div class="nav-item nav-blue" data-page="contact">
+              <span class="nav-pointer">▶</span> CONTACT
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="active-section">
+        <div class="bg-effects">
+          <div class="bg-blob bg-blob-pink"></div>
+          <div class="bg-blob bg-blob-turquoise"></div>
+          <div class="bg-blob bg-blob-purple"></div>
+        </div>
+
+        <div class="anime-girl-container">
+          <div class="window window-pink">
+            <div class="window-header">
+              <h2 class="window-title">ANiME.GiRL</h2>
+              <div class="window-controls">
+                <div class="window-button window-button-turquoise"></div>
+                <div class="window-button window-button-pink"></div>
+              </div>
+            </div>
+            <div class="window-content">
+              <div class="anime-girl">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 200 200"
+                  class="anime-girl-svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="hsl(317, 100%, 73%)" />
+                      <stop offset="100%" stop-color="hsl(268, 55%, 59%)" />
+                    </linearGradient>
+                  </defs>
+                  <g fill="url(#gradient)">
+                    <path
+                      d="M100,20 C130,20 150,50 150,80 C150,100 140,110 130,120 C120,130 110,150 100,150 C90,150 80,130 70,120 C60,110 50,100 50,80 C50,50 70,20 100,20 Z"
+                    />
+                    <circle cx="80" cy="70" r="5" fill="white" />
+                    <circle cx="120" cy="70" r="5" fill="white" />
+                    <path
+                      d="M90,90 C93,95 107,95 110,90"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </g>
+                </svg>
+                <p class="anime-text">♥ ANIME GIRL ♥</p>
+              </div>
+
+              <div class="chat-container">
+                <div class="chat-bubble chat-left">
+                  Hey there! Looking for a frontend developer?
+                </div>
+                <div class="chat-bubble chat-right">
+                  I can make your website look *perfect* ⭐(◠‿◠)⭐
+                </div>
+                <div class="chat-bubble chat-left typing-bubble">
+                  <span class="typing-text">Browse my portfolio</span>
+                  <span class="typing-cursor">|</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="main-title glitch-text">NEEDY DEV OVERDOSE</h1>
+        <p class="subtitle">⟪ Frontend Developer Portfolio ⟫</p>
+
+        <div class="scroll-indicator" id="scroll-to-about">
+          <p>SCROLL DOWN</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="bg-code">
+          <div class="code-text code-pink">404</div>
+          <div class="code-text code-turquoise">HTML</div>
+          <div class="code-text code-purple">CSS</div>
+          <div class="code-text code-blue">JS</div>
+        </div>
+
+        <div class="content-container">
+          <div class="window window-turquoise">
+            <div class="window-header">
+              <h2 class="window-title">ABOUT_ME.txt</h2>
+              <div class="window-controls">
+                <div class="window-button window-button-turquoise"></div>
+                <div class="window-button window-button-pink"></div>
+              </div>
+            </div>
+            <div class="window-content">
+              <h2 class="glitch-text about-title">ABOUT ME</h2>
+
+              <div class="forum-post forum-pink">
+                <div class="post-header">
+                  <div class="post-user">
+                    <div class="user-avatar">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <p class="username">@dev_overdosed</p>
+                  </div>
+                  <p class="post-time">Posted: 3 days ago</p>
+                </div>
+
+                <p class="post-content">
+                  Hello digital world! ⭐(◠‿◠)⭐ I'm a
+                  <span class="text-pink">Frontend Developer</span> with a
+                  passion for creating immersive web experiences that blend
+                  creativity and functionality.
+                </p>
+
+                <p class="post-content">
+                  My journey started with
+                  <span class="text-turquoise">HTML/CSS</span> back in the days
+                  of MySpace customization, and I've been hooked on building
+                  beautiful interfaces ever since!
+                </p>
+
+                <div class="post-stats">
+                  <span>♥ 42 likes</span>
+                  <span>☐ 7 comments</span>
+                  <span>↻ 3 reposts</span>
+                </div>
+              </div>
+
+              <div class="forum-post forum-purple">
+                <div class="post-header">
+                  <div class="post-user">
+                    <div class="user-avatar">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                      </svg>
+                    </div>
+                    <p class="username">@skills_update</p>
+                  </div>
+                  <p class="post-time">Posted: 1 week ago</p>
+                </div>
+
+                <h3 class="post-title">Technical Skills:</h3>
+
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <p class="skill-name">Javascript</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 39%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="skill-name">React</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 20%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="skill-name">HTML5/CSS3</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="skill-name">UI/UX Design</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="skill-name">Joking :)</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <p class="skill-name">Animation/CSS Effects</p>
+                    <div class="skill-bar">
+                      <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-stats">
+                  <span>♥ 28 likes</span>
+                  <span>☐ 3 comments</span>
+                  <span>↻ 1 repost</span>
+                </div>
+              </div>
+
+              <div class="forum-post forum-blue">
+                <div class="post-header">
+                  <div class="post-user">
+                    <div class="user-avatar">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          x="2"
+                          y="7"
+                          width="20"
+                          height="14"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <path
+                          d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="username">@experience_log</p>
+                  </div>
+                  <p class="post-time">Posted: 2 weeks ago</p>
+                </div>
+
+                <h3 class="post-title">Work Experience:</h3>
+
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h4>🚀 Frontend Developer & Creative Coder</h4>
+                    <p class="experience-date">2024 - Present</p>
+                  </div>
+                  <p class="experience-company">
+                    Self-Taught & Passion Projects
+                  </p>
+                  <p class="experience-description">
+                    Crafting immersive, glitch-infused web experiences that mix
+                    aesthetics with functionality. Building interactive UIs with
+                    React, experimenting with CSS magic, and pushing creative
+                    boundaries through personal projects.
+                  </p>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h4>💻 Independent Web Developer</h4>
+                    <p class="experience-date">2024 - Present</p>
+                  </div>
+                  <p class="experience-company">
+                    Open-Source & Experimental Designs
+                  </p>
+                  <p class="experience-description">
+                    Contributed to open-source projects, built portfolio sites,
+                    and constantly explored new ways to merge code with digital
+                    art.
+                  </p>
+                </div>
+
+                <div class="post-stats">
+                  <span>♥ 35 likes</span>
+                  <span>☐ 9 comments</span>
+                  <span>↻ 4 reposts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="content-container">
+          <div class="window window-purple">
+            <div class="window-header">
+              <h2 class="window-title">MY_PROJECTS.exe</h2>
+              <div class="window-controls">
+                <div class="window-button window-button-turquoise"></div>
+                <div class="window-button window-button-pink"></div>
+              </div>
+            </div>
+            <div class="window-content">
+              <h2 class="glitch-text projects-title">PROJECTS</h2>
+
+              <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-pink">
+                    <div class="window-header">
+                      <h2 class="window-title">Burger Landing</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Burger Landing</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Burger Landing</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          This project highlights a fast-food concept, with bold
+                          and vibrant visuals. The large image of a delicious
+                          burger immediately grabs attention. The design aims to
+                          stimulate appetite and encourage users to place an
+                          order, featuring a prominent "Order Now" button.
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            1.2k
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            487
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            24
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a
+                            href="/projects/WEB PRO Burger Landing/index.html"
+                            class="project-btn btn-primary"
+                            >DEMO</a
+                          >
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-turquoise">
+                    <div class="window-header">
+                      <h2 class="window-title">Antool</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Antool</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Antool</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          Antool is a web collection of information on paid or free Design and Development tools
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            876
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            345
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            18
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/antool/index.html" class="project-btn btn-primary">DEMO</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-blue">
+                    <div class="window-header">
+                      <h2 class="window-title">Artificial Intelligence +</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Artificial Intelligence +</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Artificial Intelligence +</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>  
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          This project showcases a next-generation platform focused on artificial intelligence and cybersecurity. The design features a futuristic theme with a dark background and an illustration of a rocket, symbolizing technological progress. The emphasis is on innovative technologies and their impact on the future.
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            1.5k
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            634
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            42
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/Artificial Intelligence +/index.html" class="project-btn btn-primary">DEMO</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-purple">
+                    <div class="window-header">
+                      <h2 class="window-title">BOOSTEDusa</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">BOOSTEDusa</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">BOOSTEDusa</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          BOOSTEDusa" is a platform promoting electric micromobility in cities, offering convenient rental of scooters, skateboards, and more. Features include real-time tracking, community-driven sharing, and stylish, eco-friendly urban transportation solutions. Join the future of mobility!
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            2.3k
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            892
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            67
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/BOOSTEDusa/index.html" class="project-btn btn-primary">PLAY</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-blue">
+                    <div class="window-header">
+                      <h2 class="window-title">Car Lottery</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Car Lottery</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Car Lottery</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>  
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          Experience the thrill of winning your dream car with Car Lottery! Join now for a chance to drive away in luxury. With affordable tickets and exciting draws, every entry brings you closer to owning the car you've always wanted. Don't miss out—your new ride could be just one ticket away!
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            1.5k
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            634
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            42
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/Cars/index.html" class="project-btn btn-primary">DEMO</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-item crt-effect">
+                  <div class="window window-pink">
+                    <div class="window-header">
+                      <h2 class="window-title">Dae</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Dae</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Dae</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">Dae's website showcases premium haircare products inspired by the beauty of the desert, combining natural ingredients with simplicity. Explore their collection, learn their story, and shop effortlessly.
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            1.2k
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            487
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            24
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a
+                            href="/projects/Dae/index.html"
+                            class="project-btn btn-primary"
+                            >DEMO</a
+                          >
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 7 -->
+                 
+                <div class="project-item crt-effect">
+                  <div class="window window-turquoise">
+                    <div class="window-header">
+                      <h2 class="window-title">Vet Care</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">Vet Care</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Vet Care</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          For Your
+            Pet’s Natural
+            Life & Care
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            876
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            345
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            18
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/Pet/index.html" class="project-btn btn-primary">DEMO</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 8 -->
+                 
+                <div class="project-item crt-effect">
+                  <div class="window window-turquoise">
+                    <div class="window-header">
+                      <h2 class="window-title">In Proces...</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content p-0">
+                      <div class="project-thumbnail">
+                        <p class="project-name">LOADING...</p>
+                        <div class="vhs-overlay"></div>
+                      </div>
+                      <div class="project-info">
+                        <div class="project-header">
+                          <h3 class="project-title">Please wait</h3>
+                          <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                          </div>
+                        </div>
+                        <p class="project-description">
+                          Coming soon...
+                        </p>
+                        <div class="project-stats">
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                              ></path>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            876
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                            345
+                          </span>
+                          <span class="stat-item">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                              ></path>
+                            </svg>
+                            18
+                          </span>
+                        </div>
+                        <div class="project-links">
+                          <a href="/projects/antool/index.html" class="project-btn btn-primary">DEMO</a>
+                          <a href="#" class="project-btn btn-secondary"
+                            >SOURCE</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="content-container">
+          <div class="window window-pink">
+            <div class="window-header">
+              <h2 class="window-title">CONTACT.sys</h2>
+              <div class="window-controls">
+                <div class="window-button window-button-turquoise"></div>
+                <div class="window-button window-button-pink"></div>
+              </div>
+            </div>
+            <div class="window-content">
+              <div class="text-center">
+                <h2 class="glitch-text contact-title">CONNECT WITH ME</h2>
+                <p class="contact-subtitle">
+                  Let's create something amazing together!
+                </p>
+              </div>
+
+              <!-- System Dialog -->
+              <div class="system-dialog" id="system-dialog">
+                <div class="window window-blue">
+                  <div class="window-header">
+                    <h2 class="window-title">SYSTEM MESSAGE</h2>
+                    <div class="window-controls">
+                      <div class="window-button window-button-turquoise"></div>
+                      <div class="window-button window-button-pink"></div>
+                    </div>
+                  </div>
+                  <div class="window-content text-center">
+                    <p class="dialog-text">
+                      Would you like to connect with this developer?
+                    </p>
+                    <div class="dialog-buttons">
+                      <button class="dialog-btn btn-turquoise" id="dialog-yes">
+                        YES
+                      </button>
+                      <button class="dialog-btn btn-pink" id="dialog-no">
+                        NO
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Links -->
+              <div class="contact-links">
+                <!-- Email -->
+                <a href="mailto:e.one1604w@gmail.com" class="contact-link">
+                  <div class="window window-turquoise">
+                    <div class="window-header">
+                      <h2 class="window-title">EMAIL</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                      <span class="contact-text">e.one1604w@gmail.com</span>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- GitHub -->
+                <a
+                  href="https://github.com/hellstumy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <div class="window window-purple">
+                    <div class="window-header">
+                      <h2 class="window-title">GITHUB</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
+                      </svg>
+                      <span class="contact-text"
+                        >https://github.com/hellstumy</span
+                      >
+                    </div>
+                  </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/mclinty/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <div class="window window-blue">
+                    <div class="window-header">
+                      <h2 class="window-title">LINKEDIN</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                      <span class="contact-text"
+                        >https://www.linkedin.com/in/mclinty/</span
+                      >
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Twitter -->
+                <a
+                  href="https://www.pinterest.com/aynulsworldbd/cute-cat-collection/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  <div class="window window-pink">
+                    <div class="window-header">
+                      <h2 class="window-title">TWITTER</h2>
+                      <div class="window-controls">
+                        <div
+                          class="window-button window-button-turquoise"
+                        ></div>
+                        <div class="window-button window-button-pink"></div>
+                      </div>
+                    </div>
+                    <div class="window-content contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                        ></path>
+                      </svg>
+                      <span class="contact-text"
+                        >Ooops... I dont have Twitter. Maybe u wanna look at
+                        cats?</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-copyright">
+        &copy; <span id="current-year"></span> NEEDY DEV OVERDOSE
+      </p>
+      <p class="footer-subtitle">
+        Built with <span class="heart">♥</span> and too much caffeine
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

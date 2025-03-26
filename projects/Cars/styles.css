@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+h1{
+    margin: 0;
+}
+h5{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+}
+
+/* header */
+
+header .container {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.heder_logo{
+    color: #252A34;
+    font-family: "Rajdhani";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.head_span{
+    color: #FF2E63;
+
+}
+.header_nav {
+    
+    
+}
+.header_a {
+    color: #252A34;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    padding-right: 30px;
+}
+.header_btns {
+}
+.log {
+    color: #FF2E63;
+
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.reg {
+    margin-left: 30px;
+    padding: 10px 23px;
+    border-radius: 5px;
+background: #FF2E63;
+    color: #FFF;
+
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reg:hover {
+    background-color: #FF5A89;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 46, 99, 0.5);
+}
+
+/* hero */
+.hero {
+}
+.hero .container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero_text {
+}
+.hero_h {
+ color: #343434;
+
+font-family: "Rajdhani";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+}
+.hero_hp {
+    margin-bottom: 50px;
+    color: #FF2E63;
+font-family: "Rajdhani";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+}
+.enter {
+    padding: 10px 20px;
+    border-radius: 5px;
+background: #346CD9;
+    color: #FFF;
+
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.enter:hover {
+    background-color: #4577FF; /* Цвет при наведении */
+    transform: scale(1.05); /* Мелкое увеличение */
+    box-shadow: 0 8px 20px rgba(52, 108, 217, 0.5); /* Тень */
+}
+
+/*compet  */
+.compet{
+    margin: 100px 0;
+}
+.compet .container {
+    display: block
+}
+.compet_h {
+    margin: 100px 0 40px 0;
+    color: #343434;
+
+font-family: "Rajdhani";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.compet_hc {
+    padding-left: 20px;
+    margin: 20px 0 14px 0;
+    color: #252A34;
+
+    font-family: "Rajdhani";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.compet_cadrs {
+    justify-content: space-between;
+    display: flex;
+}
+.compet_card {
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.compet_card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.compet_a {
+}
+.compet_img {
+}
+.price {
+    padding-left: 20px;
+    margin: 5px 0 15px 0;
+    color: #FF2E63;
+
+font-family: "Rajdhani";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.price_span {
+    color: #999;
+
+font-family: "Rajdhani";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: line-through;
+}
+.compet_p {
+    padding-left: 20px;
+    color: #343434;
+
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* how */
+.how {
+    margin-bottom: 100px;
+}
+.how .container {
+}
+.how_h {
+    margin-bottom: 50px;
+    color: #343434;
+text-align: center;
+font-family: "Rajdhani";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.how_img{
+    padding: 0 93px 30px 93px;
+}
+.how_wraps {
+    display: flex;
+    justify-content: space-between;
+}
+.how_wrap {
+    width: 250px;
+
+}
+.how_p {
+    color: #343434;
+
+text-align: center;
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* rev */
+.rev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(52, 108, 217, 0.12);
+
+}
+.rev_text {
+    width: 400px;
+height: 142px;
+margin-left: 120px;
+}
+.rev_p {
+    
+    color: #343434;
+
+text-align: center;
+font-family: "Open Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+}
+.rev_name {
+    color: #343434;
+
+text-align: center;
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+text-transform: uppercase;
+}
+/* footer */
+footer{
+    background-color: #346CD9;
+}
+footer .container {
+    display: flex;
+}
+.logo_f {
+    padding: 16px 368px 17px 55px;
+    color: #FFF;
+
+font-family: "Rajdhani";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+.footer_nav {
+    display: flex;
+    padding: 25px 0;
+}
+
+.footer_a {
+    padding-right: 15px;
+    color: #FFF;
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
